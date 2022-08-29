@@ -1,6 +1,7 @@
 import * as S from "./ArmChair.styles";
 import useMoveToPage from "../../commons/hooks/useMoveToPage";
 import useFetch from "../../../components/commons/hooks/useFetch";
+import Icon from "../../commons/iconBox/Icon.container";
 
 export default function ArmChairContainer() {
   const { onClickMoveToPage } = useMoveToPage();
@@ -11,7 +12,8 @@ export default function ArmChairContainer() {
       <S.TopWrapper>
         <h1 onClick={onClickMoveToPage("/")}>가구</h1>
         <h1 onClick={onClickMoveToPage("/armchair")}> &gt; 암체어</h1>
-        <div>필터</div>
+
+        <S.Filter>필터 &#9662;</S.Filter>
       </S.TopWrapper>
       <S.Menu>
         <S.MenuList>전체</S.MenuList>
@@ -25,10 +27,7 @@ export default function ArmChairContainer() {
         </S.TitleBox>
         <S.EngTitle>{all[0]?.armchair[0].eng}</S.EngTitle>
         <S.KorTitle>{all[0]?.armchair[0].kor}</S.KorTitle>
-        <S.IconBox>
-          <div>하트</div>
-          <div>북마크</div>
-        </S.IconBox>
+        <Icon />
       </S.ItemBox>
     </S.Container>
   );

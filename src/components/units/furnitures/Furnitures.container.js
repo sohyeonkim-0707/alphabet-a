@@ -1,6 +1,7 @@
 import * as S from "./Furnitures.styles";
 import useMoveToPage from "../../commons/hooks/useMoveToPage";
 import useFetch from "../../../components/commons/hooks/useFetch";
+import Icon from "../../../components/commons/iconBox/Icon.container";
 
 export default function Furnitures() {
   const { onClickMoveToPage } = useMoveToPage();
@@ -31,10 +32,7 @@ export default function Furnitures() {
             </S.TitleBox>
             <S.EngTitle>{e.eng}</S.EngTitle>
             <S.KorTitle>{e.kor}</S.KorTitle>
-            <S.IconBox>
-              <div>하트</div>
-              <div>북마크</div>
-            </S.IconBox>
+            <Icon />
           </S.ItemBox>
         ))}
       </S.ItemWrapper>

@@ -1,6 +1,7 @@
 import * as S from "../../../src/components/units/chair/Chair.styles";
 import useMoveToPage from "../../../src/components/commons/hooks/useMoveToPage";
 import useFetch from "../../../src/components/commons/hooks/useFetch";
+import Icon from "../../../src/components/commons/iconBox/Icon.container";
 
 export default function DiningChair() {
   const { onClickMoveToPage } = useMoveToPage();
@@ -11,7 +12,7 @@ export default function DiningChair() {
       <S.TopWrapper>
         <h1 onClick={onClickMoveToPage("/")}>가구</h1>
         <h1 onClick={onClickMoveToPage("/")}>&gt; 의자</h1>
-        <div>필터</div>
+        <S.Filter>필터 &#9662;</S.Filter>
       </S.TopWrapper>
       <S.Menu>
         <S.MenuList onClick={onClickMoveToPage("/chair")}>전체</S.MenuList>
@@ -33,28 +34,22 @@ export default function DiningChair() {
           <S.Image alt="제품사진" src={"/chair/antchair.jpg"}></S.Image>
           <S.TitleBox>
             <h2>{all[0]?.chair[0].name}</h2>
-            <div>{all[0]?.chair[0].remark}</div>
+            <div>({all[0]?.chair[0].remark})</div>
           </S.TitleBox>
           <S.EngTitle>{all[0]?.chair[0].eng}</S.EngTitle>
           <S.KorTitle>{all[0]?.chair[0].kor}</S.KorTitle>
-          <S.IconBox>
-            <div>하트</div>
-            <div>북마크</div>
-          </S.IconBox>
+          <Icon />
         </S.ItemBox>
 
         <S.ItemBox>
           <S.Image alt="제품사진" src={"/chair/hammerchair.jpg"}></S.Image>
           <S.TitleBox>
             <h2>{all[0]?.chair[1].name}</h2>
-            <div>{all[0]?.chair[1].remark}</div>
+            <div>({all[0]?.chair[1].remark})</div>
           </S.TitleBox>
           <S.EngTitle>{all[0]?.chair[1].eng}</S.EngTitle>
           <S.KorTitle>{all[0]?.chair[1].kor}</S.KorTitle>
-          <S.IconBox>
-            <div>하트</div>
-            <div>북마크</div>
-          </S.IconBox>
+          <Icon />
         </S.ItemBox>
       </S.InnerWrapper>
     </S.Container>

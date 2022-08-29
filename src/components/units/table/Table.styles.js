@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  border: 1px solid red;
+  border: 1px solid lightgray;
   width: 600px;
   height: 800px;
   padding: 10px;
@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const TopWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   h1 {
     margin: 0;
     padding: 0;
@@ -18,27 +18,45 @@ export const TopWrapper = styled.div`
     font-size: 24px;
   }
 `;
+
+export const Filter = styled.div`
+  width: 70px;
+  height: 30px;
+  margin-left: 363px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  cursor: pointer;
+`;
+
 export const Menu = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
 `;
+
 export const MenuList = styled.div`
   font-size: 20px;
   margin-right: 20px;
   cursor: pointer;
+  color: lightgray;
+  :hover {
+    color: black;
+  }
 `;
 
 export const InnerWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 `;
 
 export const ItemBox = styled.div`
-  width: 49%;
-  height: 50%;
-  border: 1px solid blue;
+  width: 290px;
+  height: 390px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,7 +75,7 @@ export const TitleBox = styled.div`
   h2 {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
   }
 
@@ -74,10 +92,4 @@ export const EngTitle = styled.div`
 export const KorTitle = styled.div`
   font-size: 12px;
   color: gray;
-`;
-
-export const IconBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  border: 1px solid red;
 `;
