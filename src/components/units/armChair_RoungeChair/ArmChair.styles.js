@@ -1,9 +1,22 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  border: 1px solid red;
+  border: 1px solid lightgray;
   width: 600px;
   height: 800px;
+  padding: 10px;
+`;
+
+export const TopWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  h1 {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 24px;
+  }
 `;
 
 export const Menu = styled.div`
@@ -18,7 +31,7 @@ export const MenuList = styled.div`
 `;
 
 export const ItemBox = styled.div`
-  width: 50%;
+  width: 49%;
   height: 50%;
   border: 1px solid blue;
   display: flex;

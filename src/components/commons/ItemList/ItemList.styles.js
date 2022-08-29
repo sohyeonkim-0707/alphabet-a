@@ -1,22 +1,5 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div`
-  border: 1px solid red;
-  width: 600px;
-  height: 800px;
-`;
-
-export const Menu = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-`;
-export const MenuList = styled.div`
-  font-size: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-`;
-
 export const ItemBox = styled.div`
   width: 50%;
   height: 50%;

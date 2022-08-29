@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   border: 1px solid lightgray;
   width: 600px;
+  height: 800px;
   padding: 10px;
 `;
 
@@ -38,8 +39,6 @@ export const MenuList = styled.div`
   font-size: 20px;
   margin-right: 20px;
   cursor: pointer;
-  display: flex;
-  flex-direction: row;
 `;
 
 export const ItemWrapper = styled.div`
@@ -95,9 +94,4 @@ export const IconBox = styled.div`
   display: flex;
   flex-direction: row;
   border: 1px solid red;
-`;
-
-export const Scroll = styled.div`
-  height: 800px;
-  overflow: auto;
 `;

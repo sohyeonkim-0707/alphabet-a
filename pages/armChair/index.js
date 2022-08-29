@@ -1,5 +1,5 @@
-import ChairContainer from "../../src/components/units/chair/Chair.container";
+import ArmChairContainer from "../../src/components/units/armChair_RoungeChair/ArmChair.container";
 
 export default function Table() {
-  return <ChairContainer />;
+  return <ArmChairContainer />;
 }

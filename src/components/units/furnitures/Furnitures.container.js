@@ -1,22 +1,25 @@
-import * as S from "./Main.styles";
+import * as S from "./Furnitures.styles";
 import useMoveToPage from "../../commons/hooks/useMoveToPage";
 import useFetch from "../../../components/commons/hooks/useFetch";
-import Icon from "../../commons/iconBox/Icon.container";
 
-export default function Main() {
+export default function Furnitures() {
   const { onClickMoveToPage } = useMoveToPage();
   const all = useFetch("http://localhost:3001/alldata");
-  console.log(all);
 
   return (
     <S.Container>
       <S.TopWrapper>
-        <h1 onClick={onClickMoveToPage("/")}>제품전체</h1>
+        <h1 onClick={onClickMoveToPage("/furnitures")}>가구</h1>
         <S.Filter>필터 &#9662;</S.Filter>
       </S.TopWrapper>
+
       <S.Menu>
-        <S.MenuList onClick={onClickMoveToPage("/")}>전체</S.MenuList>
-        <S.MenuList onClick={onClickMoveToPage("/furnitures")}>가구</S.MenuList>
+        <S.MenuList nClick={onClickMoveToPage("/")}>전체</S.MenuList>
+        <S.MenuList onClick={onClickMoveToPage("/armchair")}>
+          암체어/라운지체어
+        </S.MenuList>
+        <S.MenuList onClick={onClickMoveToPage("/chair")}>의자</S.MenuList>
+        <S.MenuList onClick={onClickMoveToPage("/table")}>테이블</S.MenuList>
       </S.Menu>
       <S.ItemWrapper>
         {all.map((e) => (
@@ -28,11 +31,10 @@ export default function Main() {
             </S.TitleBox>
             <S.EngTitle>{e.eng}</S.EngTitle>
             <S.KorTitle>{e.kor}</S.KorTitle>
-            {/* <S.IconBox>
+            <S.IconBox>
               <div>하트</div>
               <div>북마크</div>
-            </S.IconBox> */}
-            <Icon />
+            </S.IconBox>
           </S.ItemBox>
         ))}
       </S.ItemWrapper>

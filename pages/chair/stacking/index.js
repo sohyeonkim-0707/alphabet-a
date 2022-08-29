@@ -1,11 +1,10 @@
-import * as S from "./Chair.styles";
-import useMoveToPage from "../../commons/hooks/useMoveToPage";
-import useFetch from "../../../components/commons/hooks/useFetch";
+import * as S from "../../../src/components/units/chair/Chair.styles";
+import useMoveToPage from "../../../src/components/commons/hooks/useMoveToPage";
+import useFetch from "../../../src/components/commons/hooks/useFetch";
 
-export default function ChairContainer() {
+export default function Stacking() {
   const { onClickMoveToPage } = useMoveToPage();
   const all = useFetch("http://localhost:3001/sortdata");
-
   return (
     <S.Container>
       <S.TopWrapper>
@@ -28,23 +27,19 @@ export default function ChairContainer() {
           스태킹 체어
         </S.MenuList>
       </S.Menu>
-      <S.ItemWrapper>
-        {all[0]?.chair.map((e) => (
-          <S.ItemBox key={e.id}>
-            <S.Image alt="제품사진" src={e.imgSrc}></S.Image>
-            <S.TitleBox>
-              <h2>{e.name}</h2>
-              <div>{e.remark}</div>
-            </S.TitleBox>
-            <S.EngTitle>{e.eng}</S.EngTitle>
-            <S.KorTitle>{e.kor}</S.KorTitle>
-            <S.IconBox>
-              <div>하트</div>
-              <div>북마크</div>
-            </S.IconBox>
-          </S.ItemBox>
-        ))}
-      </S.ItemWrapper>
+      <S.ItemBox>
+        <S.Image src="/chair/kartell.jpg" alt="제품사진"></S.Image>
+        <S.TitleBox>
+          <h2>{all[0]?.chair[4].name}</h2>
+          <div>{all[0]?.chair[4].remark}</div>
+        </S.TitleBox>
+        <S.EngTitle>{all[0]?.chair[4].eng}</S.EngTitle>
+        <S.KorTitle>{all[0]?.chair[4].kor}</S.KorTitle>
+        <S.IconBox>
+          <div>하트</div>
+          <div>북마크</div>
+        </S.IconBox>
+      </S.ItemBox>
     </S.Container>
   );
 }

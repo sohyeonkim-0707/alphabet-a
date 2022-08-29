@@ -1,11 +1,21 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  border: 1px solid red;
+  border: 1px solid lightgray;
   width: 600px;
-  height: 800px;
+  padding: 10px;
 `;
-
+export const TopWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  h1 {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+`;
 export const Menu = styled.div`
   display: flex;
   flex-direction: row;
@@ -17,9 +27,22 @@ export const MenuList = styled.div`
   cursor: pointer;
 `;
 
+export const InnerWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const ItemWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+`;
+
 export const ItemBox = styled.div`
-  width: 50%;
-  height: 50%;
+  width: 290px;
+  height: 390px;
   border: 1px solid blue;
   display: flex;
   flex-direction: column;

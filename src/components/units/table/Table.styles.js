@@ -4,10 +4,39 @@ export const Container = styled.div`
   border: 1px solid red;
   width: 600px;
   height: 800px;
+  padding: 10px;
+`;
+
+export const TopWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  h1 {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+`;
+export const Menu = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+`;
+export const MenuList = styled.div`
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+`;
+
+export const InnerWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const ItemBox = styled.div`
-  width: 50%;
+  width: 49%;
   height: 50%;
   border: 1px solid blue;
   display: flex;

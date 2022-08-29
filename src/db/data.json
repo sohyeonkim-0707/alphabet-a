@@ -1,0 +1,142 @@
+{
+  "sortdata": [
+    {
+      "armchair": [
+        {
+          "id": 1,
+          "name": "Map Armchair",
+          "remark": "Fritz Hansen",
+          "eng": "Arm chair",
+          "kor": "암 체어",
+          "imgSrc": "armchair/maparmchair.jpg"
+        }
+      ],
+      "chair": [
+        {
+          "id": 1,
+          "name": "프리츠한센",
+          "remark": "Fritz Hansen",
+          "eng": "Ant chair",
+          "kor": "앤트 체어",
+          "imgSrc": "https://ifh.cc/g/otM9R9.jpg"
+        },
+        {
+          "id": 2,
+          "name": "프리츠한센",
+          "remark": "Fritz Hansen",
+          "eng": "Hammer chair",
+          "kor": "해머 체어",
+          "imgSrc": "https://ifh.cc/g/D0gX2y.jpg"
+        },
+        {
+          "id": 3,
+          "name": "게브르더 토넷 비엔나",
+          "remark": "Gebrüder Thonet Vienna",
+          "eng": "Coat Rack Bench",
+          "kor": "코드 옷걸이 벤치",
+          "imgSrc": "chair/coatrackbench.jpg"
+        },
+        {
+          "id": 4,
+          "name": "에메코",
+          "remark": "Emeco",
+          "eng": "Hudson Chair",
+          "kor": "허드슨 체어",
+          "imgSrc": "chair/emeco.jpg"
+        },
+        {
+          "id": 5,
+          "name": "카르텔",
+          "remark": "Kartell",
+          "eng": "4870 Chair",
+          "kor": "4870 체어",
+          "imgSrc": "chair/kartell.jpg"
+        }
+      ],
+      "table": [
+        {
+          "id": 1,
+          "name": "매그너스 올레센",
+          "remark": "Magnus Olesen",
+          "eng": "Side Table",
+          "kor": "사이드 테이블",
+          "imgSrc": "table/magnusolesen.jpg"
+        },
+        {
+          "id": 2,
+          "name": "매그너스 올레센",
+          "remark": "Magnus Olesen",
+          "eng": "Dining Table",
+          "kor": "다이닝 테이블",
+          "imgSrc": "table/sidetable.jpg"
+        }
+      ]
+    }
+  ],
+  "alldata": [
+    {
+      "id": 1,
+      "name": "Map Armchair",
+      "remark": "Fritz Hansen",
+      "eng": "Arm chair",
+      "kor": "암 체어",
+      "imgSrc": "armchair/maparmchair.jpg"
+    },
+    {
+      "id": 2,
+      "name": "프리츠한센",
+      "remark": "Fritz Hansen",
+      "eng": "Ant chair",
+      "kor": "앤트 체어",
+      "imgSrc": "chair/antchair.jpg"
+    },
+    {
+      "id": 3,
+      "name": "프리츠한센",
+      "remark": "Fritz Hansen",
+      "eng": "Hammer chair",
+      "kor": "해머 체어",
+      "imgSrc": "chair/hammerchair.jpg"
+    },
+    {
+      "id": 4,
+      "name": "게브르더 토넷 비엔나",
+      "remark": "Gebrüder Thonet Vienna",
+      "eng": "Coat Rack Bench",
+      "kor": "코드 옷걸이 벤치",
+      "imgSrc": "chair/coatrackbench.jpg"
+    },
+    {
+      "id": 5,
+      "name": "에메코",
+      "remark": "Emeco",
+      "eng": "Hudson Chair",
+      "kor": "허드슨 체어",
+      "imgSrc": "chair/emeco.jpg"
+    },
+    {
+      "id": 6,
+      "name": "카르텔",
+      "remark": "Kartell",
+      "eng": "4870 Chair",
+      "kor": "4870 체어",
+      "imgSrc": "chair/kartell.jpg"
+    },
+    {
+      "id": 7,
+      "name": "매그너스 올레센",
+      "remark": "Magnus Olesen",
+      "eng": "Side Table",
+      "kor": "사이드 테이블",
+      "imgSrc": "table/magnusolesen.jpg"
+    },
+    {
+      "id": 8,
+      "name": "매그너스 올레센",
+      "remark": "Magnus Olesen",
+      "eng": "Dining Table",
+      "kor": "다이닝 테이블",
+      "imgSrc": "table/sidetable.jpg"
+    }
+  ]
+}
