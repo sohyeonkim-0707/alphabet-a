@@ -1,6 +1,5 @@
 import * as S from "../../../src/components/units/chair/Chair.styles";
 import useMoveToPage from "../../../src/components/commons/hooks/useMoveToPage";
-import Item from "../../../src/components/commons/ItemList/ItemList.container";
 import useFetch from "../../../src/components/commons/hooks/useFetch";
 import Icon from "../../../src/components/commons/iconBox/Icon.container";
 
