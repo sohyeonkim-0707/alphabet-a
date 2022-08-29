@@ -29,6 +29,7 @@ export default function DiningChair() {
           스태킹 체어
         </S.MenuList>
       </S.Menu>
+
       <S.InnerWrapper>
         <S.ItemBox>
           <S.Image alt="제품사진" src={"/chair/antchair.jpg"}></S.Image>

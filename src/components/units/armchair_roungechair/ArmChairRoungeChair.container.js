@@ -1,9 +1,9 @@
-import * as S from "./ArmChair.styles";
+import * as S from "./ArmChairRoungeChair.styles";
 import useMoveToPage from "../../commons/hooks/useMoveToPage";
-import useFetch from "../../../components/commons/hooks/useFetch";
+import useFetch from "../../commons/hooks/useFetch";
 import Icon from "../../commons/iconBox/Icon.container";
 
-export default function ArmChairContainer() {
+export default function ArmChairRoungeChairContainer() {
   const { onClickMoveToPage } = useMoveToPage();
   const all = useFetch("http://localhost:3001/sortdata");
 

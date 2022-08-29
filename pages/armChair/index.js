@@ -1,5 +1,5 @@
-import ArmChairContainer from "../../src/components/units/armChair_RoungeChair/ArmChair.container";
+import ArmChairRoungeChairContainer from "../../src/components/units/armchair_roungechair/ArmChairRoungeChair.container";
 
-export default function ArmChair() {
-  return <ArmChairContainer />;
+export default function ArmChairRoungeChair() {
+  return <ArmChairRoungeChairContainer />;
 }

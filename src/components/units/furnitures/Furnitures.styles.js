@@ -58,6 +58,7 @@ export const ItemBox = styled.div`
   justify-content: space-between;
   width: 290px;
   height: 390px;
+  margin-bottom: 20px;
 `;
 
 export const Image = styled.img`

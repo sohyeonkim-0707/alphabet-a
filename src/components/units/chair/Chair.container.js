@@ -2,6 +2,7 @@ import * as S from "./Chair.styles";
 import useMoveToPage from "../../commons/hooks/useMoveToPage";
 import useFetch from "../../../components/commons/hooks/useFetch";
 import Icon from "../../../components/commons/iconBox/Icon.container";
+import { useState } from "react";
 
 export default function ChairContainer() {
   const { onClickMoveToPage } = useMoveToPage();
