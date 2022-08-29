@@ -11,8 +11,10 @@ export default function ArmChairRoungeChairContainer() {
     <S.Container>
       <S.TopWrapper>
         <h1 onClick={onClickMoveToPage("/")}>가구</h1>
-        <h1 onClick={onClickMoveToPage("/armchair")}> &gt; 암체어</h1>
-
+        <h1 onClick={onClickMoveToPage("/armchair")}>
+          {" "}
+          &gt; 암체어 / 라운지 체어
+        </h1>
         <S.Filter>필터 &#9662;</S.Filter>
       </S.TopWrapper>
       <S.Menu>

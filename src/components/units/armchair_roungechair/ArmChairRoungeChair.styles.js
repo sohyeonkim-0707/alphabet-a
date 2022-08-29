@@ -22,7 +22,7 @@ export const TopWrapper = styled.div`
 export const Filter = styled.div`
   width: 70px;
   height: 30px;
-  margin-left: 362px;
+  margin-left: 236px;
   line-height: 30px;
   text-align: center;
   border: 1px solid lightgray;
