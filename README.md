@@ -2,6 +2,8 @@
 
 yarn instaill > yarn dev
 
+- http://localhost:3000
+
 ### json-server 를 통한 mock data 구축
 
 json-server --watch ./src/db/data.json --port 3001
