@@ -2,7 +2,6 @@ import * as S from "./Chair.styles";
 import useMoveToPage from "../../commons/hooks/useMoveToPage";
 import useFetch from "../../../components/commons/hooks/useFetch";
 import Icon from "../../../components/commons/iconBox/Icon.container";
-import { useState } from "react";
 
 export default function ChairContainer() {
   const { onClickMoveToPage } = useMoveToPage();
@@ -30,6 +29,7 @@ export default function ChairContainer() {
           스태킹 체어
         </S.MenuList>
       </S.Menu>
+
       <S.ItemWrapper>
         {all[0]?.chair.map((e) => (
           <S.ItemBox key={e.id}>
